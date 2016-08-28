@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>New Catch</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+  <h2>Save your catches</h2>
+  <ion-list>
+
+  <ion-item>
+    <ion-label>Date & Time</ion-label>
+    <ion-datetime displayFormat="MMM DD YYYY h:mm A" pickerFormat="MMM DD YYYY h mm A" [(ngModel)]="catch.datetime"></ion-datetime>
+  </ion-item>
+  
+    <ion-item>
+      <ion-label>Species</ion-label>
+      <ion-select [(ngModel)]="catch.species">
+        <ion-option value="cod">Cod</ion-option>
+        <ion-option value="seaTrout">Sea trout</ion-option>
+        <ion-option value="herring">Herring</ion-option>
+        <ion-option value="flounder">Flounder</ion-option>
+        <ion-option value="saturn">Sega Saturn</ion-option>
+        <ion-option value="needlefish">Needlefish</ion-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Method</ion-label>
+      <ion-select [(ngModel)]="catch.method">
+        <ion-option value="cod">Cod</ion-option>
+        <ion-option value="spearfishing">Spearfishing</ion-option>
+        <ion-option value="trolling">trolling</ion-option>
+        <ion-option value="spinFishing">spin fishing</ion-option>
+        <ion-option value="fly fishing">Fly fishing</ion-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+    <ion-label>Length</ion-label>
+    <ion-input type="number" [(ngModel)]="catch.length"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Weight</ion-label>
+    <ion-input type="number" [(ngModel)]="catch.weight"></ion-input>
+  </ion-item>
+
+    
+
+</ion-list>
+
+<button (click)="submitCatch()">Submit catch</button>
+
+</ion-content>
