@@ -1,10 +1,19 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      All Catches
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding class="about">
+  <ion-list>
+    <ion-item ion-item *ngFor="let catch of catches">
+      Date: {{catch.datetime}}<br/>
+      Species: {{catch.species}}<br/>
+      Method: {{catch.method}}<br/>
+      Length: {{catch.length}}<br/>
+      Weight: {{catch.weight}}
+    </ion-item>
+  </ion-list>
 </ion-content>

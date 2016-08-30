@@ -10,12 +10,12 @@
 
   <ion-item>
     <ion-label>Date & Time</ion-label>
-    <ion-datetime displayFormat="MMM DD YYYY h:mm A" pickerFormat="MMM DD YYYY h mm A" [(ngModel)]="catch.datetime"></ion-datetime>
+    <ion-datetime displayFormat="MMM DD YYYY h:mm A" pickerFormat="MMM DD YYYY h mm A" [(ngModel)]="currentCatch.datetime"></ion-datetime>
   </ion-item>
   
     <ion-item>
       <ion-label>Species</ion-label>
-      <ion-select [(ngModel)]="catch.species">
+      <ion-select [(ngModel)]="currentCatch.species">
         <ion-option value="cod">Cod</ion-option>
         <ion-option value="seaTrout">Sea trout</ion-option>
         <ion-option value="herring">Herring</ion-option>
@@ -27,7 +27,7 @@
   
     <ion-item>
       <ion-label>Method</ion-label>
-      <ion-select [(ngModel)]="catch.method">
+      <ion-select [(ngModel)]="currentCatch.method">
         <ion-option value="cod">Cod</ion-option>
         <ion-option value="spearfishing">Spearfishing</ion-option>
         <ion-option value="trolling">trolling</ion-option>
@@ -38,12 +38,12 @@
   
     <ion-item>
     <ion-label>Length</ion-label>
-    <ion-input type="number" [(ngModel)]="catch.length"></ion-input>
+    <ion-input type="number" [(ngModel)]="currentCatch.length"></ion-input>
   </ion-item>
   
   <ion-item>
     <ion-label>Weight</ion-label>
-    <ion-input type="number" [(ngModel)]="catch.weight"></ion-input>
+    <ion-input type="number" [(ngModel)]="currentCatch.weight"></ion-input>
   </ion-item>
 
     
