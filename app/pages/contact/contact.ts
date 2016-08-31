@@ -6,6 +6,5 @@ import {NavController} from 'ionic-angular';
 })
 export class ContactPage {
   constructor(private navCtrl: NavController) {
-    console.log("Hej");
   }
 }

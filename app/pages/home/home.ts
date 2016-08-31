@@ -16,9 +16,7 @@ import { Storage, LocalStorage } from 'ionic-angular';
 export class HomePage {
   constructor(public alertCtrl: AlertController) {
     this.localStorage = new Storage(LocalStorage);
-    //this.localStorage.set("didTutorial", "true");
-
-  //  this.currentCatch = new Catch();
+    
     this.currentCatch.datetime = new Date();
   }
   
@@ -32,8 +30,8 @@ export class HomePage {
   {
       
      let alert = this.alertCtrl.create({
-      title: 'species '+this.currentCatch.species,
-      subTitle: 'Your friend, Obi wan Kenobi, just accepted your friend request!',
+      title: 'You Catch is saved',
+      subTitle: 'You can see your catches on the \'All Catches\' tab',
       buttons: ['OK']
     });
     alert.present();
