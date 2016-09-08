@@ -11,7 +11,7 @@
     <ion-item>
       <ion-icon name="ionic" item-left></ion-icon>
       <ion-label>Cool features</ion-label> 
-      <ion-toggle></ion-toggle>
+      <ion-toggle [(ngModel)]="coolFeatures" (ionChange)="coolFeaturesChanged()"></ion-toggle>
     </ion-item>
   </ion-list>
 </ion-content>
